@@ -9,9 +9,9 @@ import UIKit
 import AVFoundation
 
 
-class CountingModeViewController: UIViewController{
+class CountingModeViewController: UIViewController {
     var player: AVAudioPlayer!
-
+        
     @IBOutlet weak var countsNumber: UILabel!
     var timer = Timer()
     var totalCounts = 0
@@ -85,7 +85,7 @@ class CountingModeViewController: UIViewController{
     }
     
     @objc func updateCounts(){
-        if countsPassed <= totalCounts {
+        if countsPassed < totalCounts {
             countsNumber.text = String(totalCounts - countsPassed)
             countsPassed += 1
             countSound()
@@ -98,7 +98,7 @@ class CountingModeViewController: UIViewController{
     }
     
     func countTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCounts), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(secondsInterval!), target: self, selector: #selector(updateCounts), userInfo: nil, repeats: false)
         
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(secondsInterval!), target: self, selector: #selector(updateCounts), userInfo: nil, repeats: true)
     }

@@ -11,8 +11,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Select Mode"
-        configureItems()
+//        title = "Select Mode"
+//        configureItems()
         
     }
     
