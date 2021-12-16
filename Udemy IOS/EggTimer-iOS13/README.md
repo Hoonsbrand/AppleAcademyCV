@@ -1,27 +1,11 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+#  Clone code from Udemy Angela's IOS
 
-# Egg Timer
+There is three options of how do you want to boil your eggs.
+Each egg has a different hardness, time as well.
+You can check the time by progressbar, and he alarm_sound will be ringed. 
 
-## Our Goal
-
-This module will be a mix of tutorials and challenges. Most importantly, we want you to get comfortable with looking up how to do something you've never done before. In certain places of this module, you’ll need to follow the 5 step process you learnt in the Xylophone module and use Google search, StackOverflow and Apple Documentation to make your code do what you want it to. But there are also other parts where we’ll take you step-by-step through new Swift programming concepts. 
-
-## What You'll Make
-
-You’ll be building a beautiful egg timer app to boil your eggs to perfection depending on how you prefer your eggs. 
-
-## What you will learn
-
-* Swift Collection types - Dictionaries
-* The Swift Timer API
-* Conditional statements - IF/ELSE
-* Conditional statements - Switch
-* Functions with outputs
-* How to use the ProgressView
-
-
-
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
+This continuious using of Timer is really good to understand the Timer Class!
+And it was so cool that you can get some data easily from button or label on the screen!
+And always remember Float(number) / Float(number) and
+                    Float(number/number) is always different!
 
