@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mL0-wb-v3A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Gym_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJk-F7-WeC">
+                                <rect key="frame" x="50" y="432.5" width="102" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Timer Mode"/>
+                                <connections>
+                                    <action selector="TimerMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29k-Xo-gRZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-3Y-7d6">
+                                <rect key="frame" x="241" y="432.5" width="123" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Counting Mode"/>
+                                <connections>
+                                    <action selector="CountingMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V7f-Go-RwI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Workout Setting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLx-NL-1aa">
+                                <rect key="frame" x="107" y="175" width="200" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.85098039215686272" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WLx-NL-1aa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="4rL-fb-dN2"/>
+                            <constraint firstItem="WLx-NL-1aa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="52k-Ym-s8X"/>
+                            <constraint firstItem="vhR-3Y-7d6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cJk-F7-WeC" secondAttribute="trailing" constant="8" symbolic="YES" id="Dp0-Kr-0dQ"/>
+                            <constraint firstItem="cJk-F7-WeC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RpF-mw-yKi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vhR-3Y-7d6" secondAttribute="trailing" constant="50" id="UTf-cb-6TT"/>
+                            <constraint firstItem="WLx-NL-1aa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YGO-Zw-N7V"/>
+                            <constraint firstItem="cJk-F7-WeC" firstAttribute="baseline" secondItem="vhR-3Y-7d6" secondAttribute="baseline" id="abF-f9-YOu"/>
+                            <constraint firstItem="cJk-F7-WeC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wPu-9L-XXs"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ebd-b3-QhU"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2862.3188405797105" y="109.82142857142857"/>
+        </scene>
+        <!--Counting Pop Up Controller-->
+        <scene sceneID="xqY-i5-TP8">
+            <objects>
+                <viewController storyboardIdentifier="CountingPopUpController" id="kNS-BS-wy2" customClass="CountingPopUpController" customModule="The_Gym_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0cB-Jq-Ebl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2F8-za-VcU">
+                                <rect key="frame" x="67" y="310" width="280" height="277"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose seconds Interval" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-yf-nXW">
+                                        <rect key="frame" x="-13" y="-12" width="305" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLd-tc-j8r">
+                                        <rect key="frame" x="144" y="218" width="148" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitValue:" destination="kNS-BS-wy2" eventType="touchUpInside" id="Fyh-AL-1Vr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzw-hZ-eg7">
+                                        <rect key="frame" x="-12" y="218" width="148" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="kNS-BS-wy2" eventType="touchUpInside" id="vcY-6s-Jd8"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="0rZ-Qx-1UF">
+                                        <rect key="frame" x="2" y="156" width="276" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="GM7-gK-wJc" eventType="valueChanged" id="2WF-YF-n3n"/>
+                                            <action selector="sliderValueChanged:" destination="kNS-BS-wy2" eventType="valueChanged" id="VVe-Wk-Dr6"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAW-qg-KND">
+                                        <rect key="frame" x="104" y="60" width="72" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SRE-rN-Dme"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Vp-14-pQm"/>
+                    <connections>
+                        <outlet property="valueLabel" destination="jAW-qg-KND" id="Hm4-vL-inY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYY-ua-fXm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="GM7-gK-wJc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2451" y="718"/>
+        </scene>
+        <!--Counting Mode View Controller-->
+        <scene sceneID="00w-P1-d6i">
+            <objects>
+                <viewController storyboardIdentifier="CountingMode" modalPresentationStyle="fullScreen" id="hzX-lP-00p" customClass="CountingModeViewController" customModule="The_Gym_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CA2-ye-puB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czn-RD-ndp">
+                                <rect key="frame" x="31" y="180" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="10">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="countsButton:" destination="hzX-lP-00p" eventType="touchUpInside" id="2qz-QZ-ltS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxc-X8-VZ1">
+                                <rect key="frame" x="167" y="180" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="20">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="countsButton:" destination="hzX-lP-00p" eventType="touchUpInside" id="42N-d1-xyl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ln-aY-2cX">
+                                <rect key="frame" x="299" y="180" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="30">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="countsButton:" destination="hzX-lP-00p" eventType="touchUpInside" id="bc1-Bq-gBI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCW-Pi-OxA">
+                                <rect key="frame" x="281" y="427" width="98" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start!">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButton:" destination="hzX-lP-00p" eventType="touchUpInside" id="Xjz-Ce-vld"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AS2-Ql-JdA">
+                                <rect key="frame" x="31" y="427" width="98" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stop!">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="stopButton:" destination="hzX-lP-00p" eventType="touchUpInside" id="hjh-fi-7eb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set Counts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nle-0g-hnZ">
+                                <rect key="frame" x="-1" y="536" width="415" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hU7-cn-hNo"/>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.85098039215686272" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ur3-MQ-PTg"/>
+                    <connections>
+                        <outlet property="countsNumber" destination="Nle-0g-hnZ" id="06f-pG-CXT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pqt-ic-wBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3301.449275362319" y="687.72321428571422"/>
+        </scene>
+        <!--Timer Mode View Controller-->
+        <scene sceneID="X8X-aG-IFV">
+            <objects>
+                <viewController storyboardIdentifier="TimerMode" id="ZJP-R7-prE" customClass="TimerModeViewController" customModule="The_Gym_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="azt-IS-3p4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ab4-Vg-aXU">
+                                <rect key="frame" x="0.0" y="632" width="414" height="162"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-vo-Z2B">
+                                <rect key="frame" x="2" y="162" width="410" height="157.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="121"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEV-rN-zrp" userLabel="Reset">
+                                <rect key="frame" x="20" y="526" width="103" height="57"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButton:" destination="ZJP-R7-prE" eventType="touchUpInside" id="viG-Rq-veu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqQ-0N-eZk">
+                                <rect key="frame" x="274" y="526" width="120" height="57"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButton:" destination="ZJP-R7-prE" eventType="touchUpInside" id="mzr-hd-Gcu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fn8-5z-HR5"/>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.85098039215686272" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xqQ-0N-eZk" firstAttribute="centerX" secondItem="dx1-vo-Z2B" secondAttribute="centerX" constant="127" id="9Mw-gu-BXD"/>
+                            <constraint firstItem="dx1-vo-Z2B" firstAttribute="leading" secondItem="Fn8-5z-HR5" secondAttribute="leading" constant="2" id="Kvd-Nt-SAj"/>
+                            <constraint firstItem="dx1-vo-Z2B" firstAttribute="top" secondItem="Fn8-5z-HR5" secondAttribute="top" constant="118" id="RPx-uz-hgG"/>
+                            <constraint firstItem="xqQ-0N-eZk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QEV-rN-zrp" secondAttribute="trailing" constant="8" symbolic="YES" id="WDH-ZJ-xwR"/>
+                            <constraint firstItem="QEV-rN-zrp" firstAttribute="baseline" secondItem="xqQ-0N-eZk" secondAttribute="baseline" id="X4B-1S-x17"/>
+                            <constraint firstItem="QEV-rN-zrp" firstAttribute="leading" secondItem="azt-IS-3p4" secondAttribute="leadingMargin" id="aNF-2q-Wxu"/>
+                            <constraint firstItem="Ab4-Vg-aXU" firstAttribute="top" secondItem="xqQ-0N-eZk" secondAttribute="bottom" constant="49" id="bO2-fa-jZx"/>
+                            <constraint firstItem="xqQ-0N-eZk" firstAttribute="leading" secondItem="Fn8-5z-HR5" secondAttribute="leading" constant="274" id="dmP-dm-yp7"/>
+                            <constraint firstItem="Fn8-5z-HR5" firstAttribute="trailing" secondItem="dx1-vo-Z2B" secondAttribute="trailing" constant="2" id="ps8-iC-WDA"/>
+                            <constraint firstItem="xqQ-0N-eZk" firstAttribute="centerX" secondItem="Ab4-Vg-aXU" secondAttribute="centerX" constant="127" id="ret-0F-Lwt"/>
+                            <constraint firstItem="xqQ-0N-eZk" firstAttribute="top" secondItem="dx1-vo-Z2B" secondAttribute="bottom" constant="206.5" id="sRx-z2-g2W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="dx1-vo-Z2B" id="nca-Bt-2b6"/>
+                        <outlet property="timePicker" destination="Ab4-Vg-aXU" id="FME-En-d7z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ynw-lz-fyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3595.652173913044" y="78.348214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sMn-EN-wTp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mL0-wb-v3A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h4Z-7G-GAe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vnb-Nr-huB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XyW-Vk-Ys7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952.1739130434785" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
