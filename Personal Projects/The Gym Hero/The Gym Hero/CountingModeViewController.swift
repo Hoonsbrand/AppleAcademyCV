@@ -8,10 +8,10 @@
 import UIKit
 import AVFoundation
 
-
 class CountingModeViewController: UIViewController {
     var player: AVAudioPlayer!
-        
+    let setCountsColor = UIColor.white
+    
     @IBOutlet weak var countsNumber: UILabel!
     var timer = Timer()
     var totalCounts = 0
@@ -27,33 +27,17 @@ class CountingModeViewController: UIViewController {
     @IBAction func countsButton(_ sender: UIButton) {
         timer.invalidate()
         totalCounts = Int(sender.titleLabel!.text!)!
-        
-//        let alert = UIAlertController(title: "Input seconds Interval", message: "Fear is just an illusion", preferredStyle: .alert)
-//        alert.addTextField { (myTextField) in
-//            myTextField.placeholder = "Please Input only Integer! (1~)"
-//        }
-//        let ok = UIAlertAction(title: "OK", style: .default) {
-//            (ok) in
-//            self.secondsInterval = Float(alert.textFields![0].text!)
-//            self.countsNumber.text = "Press Start!"
-//        }
-//        let cancel = UIAlertAction(title: "cancel", style: .cancel) {
-//            (cancel) in
-//        }
-//        alert.addAction(cancel)
-//        alert.addAction(ok)
-//        self.present(alert, animated: true, completion: nil)
-        
+ 
         let alert = UIAlertController(title: "Choose seconds Interval", message: "Fear is just an illusion", preferredStyle: .actionSheet)
         
-        let oneSec = UIAlertAction(title: "1", style: .default) { (action) in
+        let oneSec = UIAlertAction(title: "2", style: .default) { (action) in
             self.secondsInterval = Float(alert.actions[0].title!)
         }
         
-        let twoSec = UIAlertAction(title: "2", style: .default) { (action) in
+        let twoSec = UIAlertAction(title: "3", style: .default) { (action) in
             self.secondsInterval = Float(alert.actions[1].title!)
         }
-        let threeSec = UIAlertAction(title: "3", style: .default) { (action) in
+        let threeSec = UIAlertAction(title: "4", style: .default) { (action) in
             self.secondsInterval = Float(alert.actions[2].title!)
         }
         let cancel = UIAlertAction(title: "cancel", style: .cancel) {
@@ -80,7 +64,7 @@ class CountingModeViewController: UIViewController {
         secondsInterval = 1.0
         countsPassed = 0
         countsNumber.text = "Set Counts"
-        countsNumber.backgroundColor = UIColor.systemBlue
+        countsNumber.backgroundColor = setCountsColor
         player.stop()
     }
     
@@ -121,7 +105,7 @@ class CountingModeViewController: UIViewController {
             self.secondsInterval = 1.0
             self.countsPassed = 0
             self.countsNumber.text = "Set Counts"
-            self.countsNumber.backgroundColor = UIColor.systemBlue
+            self.countsNumber.backgroundColor = self.setCountsColor
             self.player.stop()
         }
     }

@@ -16,6 +16,7 @@
 		04125C9D276891B800446D90 /* CountingModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04125C9C276891B800446D90 /* CountingModeViewController.swift */; };
 		04125C9F2768920500446D90 /* TimerModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04125C9E2768920500446D90 /* TimerModeViewController.swift */; };
 		04125CA52768CC2400446D90 /* CountingPopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04125CA42768CC2400446D90 /* CountingPopUpController.swift */; };
+		042F6A7A276CA492002716DC /* Finish_alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 042F6A79276CA492002716DC /* Finish_alarm.wav */; };
 		049147162769BFC1009EA477 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 049147152769BFC1009EA477 /* C.wav */; };
 		049147182769BFD5009EA477 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 049147172769BFD5009EA477 /* alarm_sound.mp3 */; };
 		0491471C2769E551009EA477 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491471B2769E550009EA477 /* SettingViewController.swift */; };
@@ -34,6 +35,8 @@
 		04125C9C276891B800446D90 /* CountingModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingModeViewController.swift; sourceTree = "<group>"; };
 		04125C9E2768920500446D90 /* TimerModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModeViewController.swift; sourceTree = "<group>"; };
 		04125CA42768CC2400446D90 /* CountingPopUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingPopUpController.swift; sourceTree = "<group>"; };
+		042F6A74276C95C9002716DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		042F6A79276CA492002716DC /* Finish_alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Finish_alarm.wav; sourceTree = "<group>"; };
 		04620C7B276B2E77007165D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049147152769BFC1009EA477 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
 		049147172769BFD5009EA477 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		04125C6F276875AF00446D90 = {
 			isa = PBXGroup;
 			children = (
+				042F6A74276C95C9002716DC /* README.md */,
 				04125C7A276875B000446D90 /* The Gym Hero */,
 				04125C79276875B000446D90 /* Products */,
 			);
@@ -90,6 +94,7 @@
 				0491471D2769E566009EA477 /* AddProfileViewController.swift */,
 				0491471F2769E5D7009EA477 /* EditProfileViewController.swift */,
 				04620C7B276B2E77007165D0 /* Info.plist */,
+				042F6A79276CA492002716DC /* Finish_alarm.wav */,
 			);
 			path = "The Gym Hero";
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				04125C88276875B200446D90 /* LaunchScreen.storyboard in Resources */,
 				04125C85276875B200446D90 /* Assets.xcassets in Resources */,
 				04125C83276875B000446D90 /* Main.storyboard in Resources */,
+				042F6A7A276CA492002716DC /* Finish_alarm.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

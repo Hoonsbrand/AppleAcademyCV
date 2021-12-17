@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,40 +12,42 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="QdH-ie-xu4">
-                                <rect key="frame" x="10" y="50" width="355" height="467"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="255" verticalHuggingPriority="251" image="The Gym Hero-1" translatesAutoresizingMaskIntoConstraints="NO" id="ixL-91-wCq">
-                                        <rect key="frame" x="7" y="0.0" width="341" height="67"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheGymHero" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-iO-WYg">
-                                        <rect key="frame" x="0.0" y="117" width="355" height="250"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="250" id="6y1-Eu-3md"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Hoonsbrand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGK-u7-p4P">
-                                        <rect key="frame" x="108" y="417" width="139" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="g2u-dx-G6H"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheGymHero" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-iO-WYg">
+                                <rect key="frame" x="3" y="323" width="408" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="6y1-Eu-3md"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Hoonsbrand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vGK-u7-p4P">
+                                <rect key="frame" x="138" y="733" width="138" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="g2u-dx-G6H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="255" verticalHuggingPriority="251" image="Neon Sign" translatesAutoresizingMaskIntoConstraints="NO" id="ixL-91-wCq">
+                                <rect key="frame" x="37" y="107" width="340" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="LEb-Np-reJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="QdH-ie-xu4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="7tn-HP-nV4"/>
-                            <constraint firstItem="QdH-ie-xu4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="laa-YF-ZQf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QdH-ie-xu4" secondAttribute="bottom" constant="150" id="qrf-Zu-Mnp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QdH-ie-xu4" secondAttribute="trailing" constant="10" id="y2R-0k-zlU"/>
+                            <constraint firstItem="vGK-u7-p4P" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1vv-p2-5qp"/>
+                            <constraint firstItem="Xd1-iO-WYg" firstAttribute="top" secondItem="ixL-91-wCq" secondAttribute="bottom" constant="8" symbolic="YES" id="Dtm-BQ-Sdc"/>
+                            <constraint firstItem="vGK-u7-p4P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="GAy-iE-5aA"/>
+                            <constraint firstItem="vGK-u7-p4P" firstAttribute="centerX" secondItem="ixL-91-wCq" secondAttribute="centerX" id="Kpe-fb-Cab"/>
+                            <constraint firstItem="ixL-91-wCq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="LC0-EU-gya"/>
+                            <constraint firstItem="vGK-u7-p4P" firstAttribute="centerX" secondItem="Xd1-iO-WYg" secondAttribute="centerX" id="iy1-Ee-KAt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vGK-u7-p4P" secondAttribute="bottom" constant="79" id="xio-Aj-Cub"/>
+                            <constraint firstItem="ixL-91-wCq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="zeA-cg-ugb"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -55,7 +57,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="The Gym Hero-1" width="341" height="341"/>
+        <image name="Neon Sign" width="341" height="341"/>
         <image name="TheGymHero" width="408" height="375"/>
     </resources>
 </document>

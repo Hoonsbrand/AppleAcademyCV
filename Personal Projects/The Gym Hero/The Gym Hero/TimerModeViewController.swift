@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TimerModeViewController: UIViewController {
-        
+    var player: AVAudioPlayer!
+
     @IBOutlet weak var timePicker: UIPickerView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var startPauseButton: UIButton!
@@ -44,18 +46,7 @@ class TimerModeViewController: UIViewController {
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateMinuteSecond), userInfo: nil, repeats: true)
     }
-    
-    @objc func updateTimer(){
-      
-        if secondsPassed <= totalTime {
-            timeLabel.text = String(totalTime - secondsPassed)
-            secondsPassed += 1
-        } else {
-            timeLabel.text = "FINISHED!"
-            timer.invalidate()
-        }
-    }
-    
+
     @objc func updateMinuteSecond() {
         totalPassed = totalTime - secondsPassed
         applyMinute = totalPassed / 60
@@ -66,9 +57,9 @@ class TimerModeViewController: UIViewController {
             timeLabelLogic()
             secondsPassed += 1
         } else {
-            
+            finishSound()
             timeLabel.text = "FINISHED!"
-            timer.invalidate()
+            timerEnd()
         }
     }
     
@@ -166,6 +157,26 @@ extension TimerModeViewController: UIPickerViewDelegate, UIPickerViewDataSource 
             seconds = row
         default:
             break;
+        }
+    }
+    
+    func finishSound(){
+        let url = Bundle.main.url(forResource: "Finish_alarm", withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+    }
+    
+    func timerEnd() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            self.timer.invalidate()
+            self.timeLabel.text = "00:00"
+            self.totalTime = 0
+            self.secondsPassed = 0
+            self.totalPassed = 0
+            self.applyMinute = 0
+            self.applySecond = 0
+            self.onlySecond = 0
+            self.player.stop()
         }
     }
 }
