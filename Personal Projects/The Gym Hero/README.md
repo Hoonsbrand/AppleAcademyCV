@@ -6,7 +6,7 @@ This Personal Project is made for reviewing what i have learned from Udemy Angel
 
 (LaunchScreen)
 
-<img src = "https://user-images.githubusercontent.com/63503972/146531222-d43cf34c-393b-4b33-a38e-ca132e6999e4.png" width="50%" height="50">
+<img src = "https://user-images.githubusercontent.com/63503972/146531222-d43cf34c-393b-4b33-a38e-ca132e6999e4.png" width="100%" height="100">
 
 Neon sign - was designed by me through "canva.com".
 The gym hero icon - downloaded from google.
