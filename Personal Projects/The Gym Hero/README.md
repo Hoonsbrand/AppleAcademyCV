@@ -1,13 +1,12 @@
 #  Personal Project - The Gym Hero
  
 This Personal Project is made for reviewing what i have learned from Udemy Angela's IOS Course.
-<<<<<<< HEAD
+
 ;Using Timer - EggTimer
- reading the text from button or label - Quizzler, Destini
+;reading the text from button or label - Quizzler, Destini
 --------------------------------------------------------------------
-=======
-------------------------------------------------------------------------------------------------
->>>>>>> b6d4ea9e2c507e5a5c84e304aedff5711d89108b
+
+--------------------------------------------------------------------
 [Functions & UI Explanation]
 
 (LaunchScreen)
@@ -62,13 +61,8 @@ UIAlertController - I wanted to use Alert Function, I brought a code from stacko
 
 
 --------------------------------------------------------------------------------------
-todo - change the if - else from TimerModeViewController to more efficiently.
-       solve Exception caught in AudioQueueInternalNotifyRunning - error -66671. 
-<<<<<<< HEAD
-       apply MVC pattern
-=======
-       
- 
->>>>>>> b6d4ea9e2c507e5a5c84e304aedff5711d89108b
+todo - 1. change the if - else from TimerModeViewController to more efficiently.
+       2. solve Exception caught in AudioQueueInternalNotifyRunning - error -66671. 
+       3. apply MVC pattern
 
 
