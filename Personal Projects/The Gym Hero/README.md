@@ -15,7 +15,7 @@ delay - I gave it 2 seconds of delay and used "Thread.sleep(forTimeInterval: 2.0
 
 (ViewController)
 
-![simulator_screenshot_F59B55DA-722B-4C4C-BD80-C05CD42828A4](https://user-images.githubusercontent.com/63503972/146531336-452adc9f-45cd-469d-afb1-e71615a7125a.png)
+![simulator_screenshot_F59B55DA-722B-4C4C-BD80-C05CD42828A4](<img src = https://user-images.githubusercontent.com/63503972/146531336-452adc9f-45cd-469d-afb1-e71615a7125a.png width="30" height="30">)
 
 "Wanna be cool? Do Swift" - used RGB color from the swift icon on dumbbell, I wanted to give them color match.
 
