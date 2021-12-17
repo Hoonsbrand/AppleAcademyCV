@@ -2,11 +2,12 @@
  
 This Personal Project is made for reviewing what i have learned from Udemy Angela's IOS Course.
 
-;Using Timer - EggTimer
-;reading the text from button or label - Quizzler, Destini
+1. Using Timer - EggTimer
+2. reading the text from button or label - Quizzler, Destini
 --------------------------------------------------------------------
 
---------------------------------------------------------------------
+
+
 [Functions & UI Explanation]
 
 (LaunchScreen)
@@ -62,7 +63,9 @@ UIAlertController - I wanted to use Alert Function, I brought a code from stacko
 
 --------------------------------------------------------------------------------------
 todo - 1. change the if - else from TimerModeViewController to more efficiently.
+
        2. solve Exception caught in AudioQueueInternalNotifyRunning - error -66671. 
+       
        3. apply MVC pattern
 
 
