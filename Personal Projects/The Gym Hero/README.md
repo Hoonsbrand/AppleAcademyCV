@@ -15,7 +15,7 @@ delay - I gave it 2 seconds of delay and used "Thread.sleep(forTimeInterval: 2.0
 
 (ViewController)
 
-<img src1 = "https://user-images.githubusercontent.com/63503972/146531336-452adc9f-45cd-469d-afb1-e71615a7125a.png" width="30%" height="30%">
+![simulator_screenshot_F59B55DA-722B-4C4C-BD80-C05CD42828A4](https://user-images.githubusercontent.com/63503972/146531336-452adc9f-45cd-469d-afb1-e71615a7125a.png)
 
 "Wanna be cool? Do Swift" - used RGB color from the swift icon on dumbbell, I wanted to give them color match.
 
@@ -25,7 +25,7 @@ You can select the Mode out of two options :
 
 (Timer Mode)
 
-<img src = "https://user-images.githubusercontent.com/63503972/146531739-8ae99c17-1356-41dc-9737-e934407375f8.png" width="30" height="30">
+![simulator_screenshot_3BF67DC0-B640-4B64-9353-FDCCC3A2000D](https://user-images.githubusercontent.com/63503972/146531739-8ae99c17-1356-41dc-9737-e934407375f8.png)
  
 I used timePicker and customized it by minute and seconds only mode.
 refered to - 
@@ -58,6 +58,7 @@ UIAlertController - I wanted to use Alert Function, I brought a code from stacko
 --------------------------------------------------------------------------------------
 todo - change the if - else from TimerModeViewController to more efficiently.
        solve Exception caught in AudioQueueInternalNotifyRunning - error -66671. 
+       
  
 
 
