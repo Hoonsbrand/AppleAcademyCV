@@ -2,15 +2,24 @@
  
 This Personal Project is made for reviewing what i have learned from Udemy Angela's IOS Course.
 
-1. Using Timer - EggTimer
-2. reading the text from button or label - Quizzler, Destini
+*Using Timer - EggTimer*
+*reading the text from button or label - Quizzler, Destini*
+
+**Index**
+1. LaunchScreen
+2. ViewController
+3. Timer Mode
+4. Counting Mode
+5. TODO
+
+
 --------------------------------------------------------------------
 
 
 
 [Functions & UI Explanation]
 
-(LaunchScreen)
+**LaunchScreen**
 
 ![simulator_screenshot_D71BF05B-9DA3-4B6B-B7C1-47DC9DEEC948](https://user-images.githubusercontent.com/63503972/146531222-d43cf34c-393b-4b33-a38e-ca132e6999e4.png)
 
@@ -19,7 +28,10 @@ The gym hero icon - downloaded from google.
 delay - I gave it 2 seconds of delay and used "Thread.sleep(forTimeInterval: 2.0)" at AppDelegate.swift
 
 
-(ViewController)
+
+
+--------------------------------------------------------------------------------------------------------
+**ViewController**
 
 ![simulator_screenshot_F59B55DA-722B-4C4C-BD80-C05CD42828A4](https://user-images.githubusercontent.com/63503972/146531336-452adc9f-45cd-469d-afb1-e71615a7125a.png)
 
@@ -29,7 +41,10 @@ Navigation bar - You can go back through navigation bar.
 
 You can select the Mode out of two options :
 
-(Timer Mode)
+
+
+--------------------------------------------------------------------------------------------------------
+**Timer Mode**
 
 ![simulator_screenshot_3BF67DC0-B640-4B64-9353-FDCCC3A2000D](https://user-images.githubusercontent.com/63503972/146531739-8ae99c17-1356-41dc-9737-e934407375f8.png)
  
@@ -45,7 +60,10 @@ issues - when it started to count down, even it was bigger than 60 seconds (minu
 solve - I wanted to solve it by myself. I used if - else. 
 
 
-(Counting Mode)
+
+
+--------------------------------------------------------------------------------------------------------
+**Counting Mode**
 
 ![simulator_screenshot_B090D710-2B9A-4F60-9CB1-F037BB4C8868](https://user-images.githubusercontent.com/63503972/146537162-13be5932-987e-49b6-86dd-40171354f503.png)
 
@@ -61,8 +79,14 @@ UIAlertController - I wanted to use Alert Function, I brought a code from stacko
 
 
 
+
+
+
+
 --------------------------------------------------------------------------------------
-todo - 1. change the if - else from TimerModeViewController to more efficiently.
+**TODO**
+    
+       1. change the if - else from TimerModeViewController to more efficiently.
 
        2. solve Exception caught in AudioQueueInternalNotifyRunning - error -66671. 
        
