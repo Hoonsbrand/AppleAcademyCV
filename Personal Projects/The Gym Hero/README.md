@@ -25,7 +25,7 @@ You can select the Mode out of two options :
 
 (Timer Mode)
 
-<img src = "https://user-images.githubusercontent.com/63503972/146531739-8ae99c17-1356-41dc-9737-e934407375f8.png" width="30" height="30")
+<img src = "https://user-images.githubusercontent.com/63503972/146531739-8ae99c17-1356-41dc-9737-e934407375f8.png" width="30" height="30">
  
 I used timePicker and customized it by minute and seconds only mode.
 refered to - 
