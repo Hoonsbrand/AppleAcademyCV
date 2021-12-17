@@ -1,12 +1,12 @@
 #  Personal Project - The Gym Hero
  
 This Personal Project is made for reviewing what i have learned from Udemy Angela's IOS Course.
-
+------------------------------------------------------------------------------------------------
 [Functions & UI Explanation]
 
 (LaunchScreen)
 
-![simulator_screenshot_D71BF05B-9DA3-4B6B-B7C1-47DC9DEEC948](https://user-images.githubusercontent.com/63503972/146531222-d43cf34c-393b-4b33-a38e-ca132e6999e4.png)
+<img src = "https://user-images.githubusercontent.com/63503972/146531222-d43cf34c-393b-4b33-a38e-ca132e6999e4.png" width="30%" height="30")
 
 Neon sign - was designed by me through "canva.com".
 The gym hero icon - downloaded from google.
