@@ -93,6 +93,6 @@ UIAlertController - I wanted to use Alert Function, I brought a code from stacko
        
        3. apply MVC pattern
        
-       4. ~~fix auto-layout to make it fit for any Iphone's resolution.~~
+       ~~4. fix auto-layout to make it fit for any Iphone's resolution.~~
 
 
