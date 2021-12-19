@@ -92,5 +92,7 @@ UIAlertController - I wanted to use Alert Function, I brought a code from stacko
        2. solve Exception caught in AudioQueueInternalNotifyRunning - error -66671. 
        
        3. apply MVC pattern
+       
+       4. ~~fix auto-layout to make it fit for any Iphone's resolution.~~
 
 
