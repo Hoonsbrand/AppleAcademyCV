@@ -15,14 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheGymHero" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-iO-WYg">
-                                <rect key="frame" x="3" y="323" width="408" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="6y1-Eu-3md"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Hoonsbrand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vGK-u7-p4P">
-                                <rect key="frame" x="138" y="733" width="138" height="50"/>
+                                <rect key="frame" x="138" y="783" width="138" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="g2u-dx-G6H"/>
                                 </constraints>
@@ -31,9 +25,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="255" verticalHuggingPriority="251" image="Neon Sign" translatesAutoresizingMaskIntoConstraints="NO" id="ixL-91-wCq">
-                                <rect key="frame" x="37" y="107" width="340" height="208"/>
+                                <rect key="frame" x="37" y="72" width="340" height="208"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="208" id="LEb-Np-reJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheGymHero" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-iO-WYg">
+                                <rect key="frame" x="3" y="288" width="408" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="6y1-Eu-3md"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -44,9 +44,10 @@
                             <constraint firstItem="Xd1-iO-WYg" firstAttribute="top" secondItem="ixL-91-wCq" secondAttribute="bottom" constant="8" symbolic="YES" id="Dtm-BQ-Sdc"/>
                             <constraint firstItem="vGK-u7-p4P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="GAy-iE-5aA"/>
                             <constraint firstItem="vGK-u7-p4P" firstAttribute="centerX" secondItem="ixL-91-wCq" secondAttribute="centerX" id="Kpe-fb-Cab"/>
-                            <constraint firstItem="ixL-91-wCq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="LC0-EU-gya"/>
+                            <constraint firstItem="ixL-91-wCq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="LC0-EU-gya"/>
                             <constraint firstItem="vGK-u7-p4P" firstAttribute="centerX" secondItem="Xd1-iO-WYg" secondAttribute="centerX" id="iy1-Ee-KAt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vGK-u7-p4P" secondAttribute="bottom" constant="79" id="xio-Aj-Cub"/>
+                            <constraint firstItem="Xd1-iO-WYg" firstAttribute="top" secondItem="ixL-91-wCq" secondAttribute="bottom" constant="8" id="oX7-ih-iwX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vGK-u7-p4P" secondAttribute="bottom" constant="29" id="xio-Aj-Cub"/>
                             <constraint firstItem="ixL-91-wCq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="zeA-cg-ugb"/>
                         </constraints>
                     </view>
