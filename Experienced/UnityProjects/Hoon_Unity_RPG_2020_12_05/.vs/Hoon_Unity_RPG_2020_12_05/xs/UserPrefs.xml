@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{263105D2-2F8A-9FDE-3666-FF1D9EA25D0D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GlobalUserData.cs">
+    <Files>
+      <File FileName="Assets/Scripts/CameraCtrl.cs" Line="25" Column="1" />
+      <File FileName="Assets/Scripts/BulletCtrl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ClickMark.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ConfigBox.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DamageText.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GlobalUserData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HeroCtrl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/InGame_Mgr.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ItemNode.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ItemObjInfo.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Lobby_Mgr.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MonsterCtrl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MouseHover.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Title_Mgr.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UnitSequence.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="87cef0c5-b004-474c-a253-67d0c4a5f18f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
