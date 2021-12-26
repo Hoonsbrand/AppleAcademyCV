@@ -77,7 +77,13 @@ Whenever a set finished, my trainer tells me to drink water, so I made my code d
 
 UIAlertController - I wanted to use Alert Function, I brought a code from stackoverflow. same link with Timer Mode - timePicker.
 
+--------------------------------------------------------------------------------------------------------
+**Localizing**
+![nado_photo1](https://user-images.githubusercontent.com/63503972/147404819-6d8e8bbf-7679-49fb-ae6d-dd67beaddd60.png)
 
+![nado_photo](https://user-images.githubusercontent.com/63503972/147404825-fb6dcca5-aaa1-471d-95a8-7f4e46a705d6.png)
+
+Korean and English are now available.
 
 
 
