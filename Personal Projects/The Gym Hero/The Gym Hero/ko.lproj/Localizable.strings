@@ -1,0 +1,29 @@
+/*
+  Localizable.strings
+  The Gym Hero
+
+  Created by Hoonsbrand on 12/23/21.
+  
+*/
+
+
+"Select The Mode!" = "모드를 선택하세요!";
+"Timer Mode" = "타이머모드";
+"Counting Mode" = "갯수 모드";
+"Language Setting" = "언어 설정";
+"Choose the language." = "언어를 선택하세요.";
+"Korean" = "한국어";
+"English" = "영어";
+"cancel" = "취소";
+"FINISHED!" = "시간 종료!";
+"Start" = "시작";
+"Reset" = "리셋";
+"Stop" = "중지";
+"Choose seconds Interval" = "초 간격을 선택하세요.";
+"Fear is just an illusion" = "두려움은 환상이다.";
+"Set Counts" = "세트를 설정하세요.";
+"Drink Some Water!" = "이제 물 마시자!";
+"Counting Mode" = "갯수 모드";
+"Minute" = "분";
+"Seconds" = "초";
+"Back" = "뒤로";

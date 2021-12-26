@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mL0-wb-v3A">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Gym_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOF-FJ-EJw">
-                                <rect key="frame" x="-19.5" y="-44" width="414" height="423.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="423.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Wanna be Cool? Do Swift&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n8J-HF-fiz">
                                         <rect key="frame" x="32.5" y="294.5" width="349" height="29.5"/>
@@ -54,7 +54,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mT-mX-hxo">
-                                <rect key="frame" x="-19.5" y="379.5" width="414" height="366"/>
+                                <rect key="frame" x="0.0" y="423.5" width="414" height="366"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-3Y-7d6">
                                         <rect key="frame" x="124" y="209" width="166" height="40"/>
@@ -85,15 +85,15 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="vhR-3Y-7d6" firstAttribute="leading" secondItem="8mT-mX-hxo" secondAttribute="leading" constant="124" id="2at-Wa-9A6"/>
                                     <constraint firstAttribute="trailing" secondItem="vhR-3Y-7d6" secondAttribute="trailing" constant="124" id="4br-8o-l5O"/>
                                     <constraint firstItem="WLx-NL-1aa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8mT-mX-hxo" secondAttribute="leading" id="4hI-Jv-PwZ"/>
-                                    <constraint firstItem="cJk-F7-WeC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8mT-mX-hxo" secondAttribute="leading" id="768-Mv-9GP"/>
                                     <constraint firstItem="vhR-3Y-7d6" firstAttribute="top" secondItem="cJk-F7-WeC" secondAttribute="bottom" constant="44" id="Bk5-ti-QkX"/>
                                     <constraint firstItem="WLx-NL-1aa" firstAttribute="top" secondItem="8mT-mX-hxo" secondAttribute="top" constant="21" id="RQ1-ve-nyK"/>
                                     <constraint firstAttribute="trailing" secondItem="WLx-NL-1aa" secondAttribute="trailing" constant="76" id="cfQ-ES-h49"/>
-                                    <constraint firstItem="vhR-3Y-7d6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8mT-mX-hxo" secondAttribute="leading" id="e1t-lf-8cz"/>
                                     <constraint firstAttribute="trailing" secondItem="cJk-F7-WeC" secondAttribute="trailing" constant="140" id="lZ2-D5-WDz"/>
                                     <constraint firstAttribute="bottom" secondItem="vhR-3Y-7d6" secondAttribute="bottom" constant="117" id="u5n-K3-xPv"/>
+                                    <constraint firstItem="cJk-F7-WeC" firstAttribute="leading" secondItem="8mT-mX-hxo" secondAttribute="leading" constant="140" id="wY7-eA-wUI"/>
                                     <constraint firstItem="cJk-F7-WeC" firstAttribute="top" secondItem="WLx-NL-1aa" secondAttribute="bottom" constant="61" id="y4z-PF-Zwi"/>
                                 </constraints>
                             </view>
@@ -111,6 +111,11 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ebd-b3-QhU"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="countingModeLabel" destination="vhR-3Y-7d6" id="7pv-Df-DcC"/>
+                        <outlet property="selectModeLabel" destination="WLx-NL-1aa" id="bni-qf-Ui5"/>
+                        <outlet property="timerModeLabel" destination="cJk-F7-WeC" id="2WN-B9-YIf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,7 +126,7 @@
             <objects>
                 <viewController storyboardIdentifier="CountingPopUpController" id="kNS-BS-wy2" customClass="CountingPopUpController" customModule="The_Gym_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0cB-Jq-Ebl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2F8-za-VcU">
@@ -191,11 +196,11 @@
             <objects>
                 <viewController storyboardIdentifier="CountingMode" modalPresentationStyle="fullScreen" id="hzX-lP-00p" customClass="CountingModeViewController" customModule="The_Gym_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CA2-ye-puB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AS2-Ql-JdA">
-                                <rect key="frame" x="16" y="286" width="94" height="52"/>
+                                <rect key="frame" x="16" y="481" width="94" height="52"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Stop!">
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
@@ -205,8 +210,8 @@
                                     <action selector="stopButton:" destination="hzX-lP-00p" eventType="touchUpInside" id="hjh-fi-7eb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fear is an illusion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nle-0g-hnZ">
-                                <rect key="frame" x="0.0" y="390" width="375" height="277"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fear is just an illusion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nle-0g-hnZ">
+                                <rect key="frame" x="0.0" y="585" width="414" height="277"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="277" id="jfk-1B-9bE"/>
                                 </constraints>
@@ -214,7 +219,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCW-Pi-OxA">
-                                <rect key="frame" x="262.5" y="286" width="96.5" height="52"/>
+                                <rect key="frame" x="301.5" y="481" width="96.5" height="52"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start!">
                                     <backgroundConfiguration key="background"/>
@@ -225,10 +230,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="7c3-K4-jUn">
-                                <rect key="frame" x="20" y="73" width="335" height="80"/>
+                                <rect key="frame" x="20" y="117" width="374" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czn-RD-ndp">
-                                        <rect key="frame" x="0.0" y="0.0" width="77" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="80"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="12">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -240,7 +245,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxc-X8-VZ1">
-                                        <rect key="frame" x="129" y="0.0" width="77" height="80"/>
+                                        <rect key="frame" x="142" y="0.0" width="90" height="80"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="15">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -252,7 +257,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ln-aY-2cX">
-                                        <rect key="frame" x="258" y="0.0" width="77" height="80"/>
+                                        <rect key="frame" x="284" y="0.0" width="90" height="80"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="20">
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -288,6 +293,8 @@
                     <navigationItem key="navigationItem" id="ur3-MQ-PTg"/>
                     <connections>
                         <outlet property="countsNumber" destination="Nle-0g-hnZ" id="06f-pG-CXT"/>
+                        <outlet property="startLabel" destination="uCW-Pi-OxA" id="wmw-F8-w4G"/>
+                        <outlet property="stopLabel" destination="AS2-Ql-JdA" id="f8G-G3-ayd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pqt-ic-wBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -299,14 +306,14 @@
             <objects>
                 <viewController storyboardIdentifier="TimerMode" id="ZJP-R7-prE" customClass="TimerModeViewController" customModule="The_Gym_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="azt-IS-3p4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="Ab4-Vg-aXU">
-                                <rect key="frame" x="47" y="421" width="281" height="206"/>
+                                <rect key="frame" x="47" y="535.5" width="320" height="286.5"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-vo-Z2B">
-                                <rect key="frame" x="0.0" y="90.5" width="375" height="103.5"/>
+                                <rect key="frame" x="0.0" y="205" width="414" height="103.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="103.5" id="fJM-D4-HGw"/>
                                 </constraints>
@@ -315,7 +322,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEV-rN-zrp" userLabel="Reset">
-                                <rect key="frame" x="20" y="305" width="103" height="57"/>
+                                <rect key="frame" x="20" y="419.5" width="103" height="57"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Reset">
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
@@ -325,7 +332,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqQ-0N-eZk">
-                                <rect key="frame" x="259.5" y="305" width="95.5" height="57"/>
+                                <rect key="frame" x="298.5" y="419.5" width="95.5" height="57"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start">
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
@@ -354,7 +361,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="startLabel" destination="xqQ-0N-eZk" id="7Jd-mU-egn"/>
                         <outlet property="startPauseButton" destination="xqQ-0N-eZk" id="E9B-GW-bEE"/>
+                        <outlet property="stopLabel" destination="QEV-rN-zrp" id="pLg-N3-PDk"/>
                         <outlet property="timeLabel" destination="dx1-vo-Z2B" id="nca-Bt-2b6"/>
                         <outlet property="timePicker" destination="Ab4-Vg-aXU" id="FME-En-d7z"/>
                     </connections>
@@ -369,7 +378,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mL0-wb-v3A" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h4Z-7G-GAe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

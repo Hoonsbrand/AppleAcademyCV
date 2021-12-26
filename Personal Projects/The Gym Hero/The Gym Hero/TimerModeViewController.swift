@@ -11,6 +11,9 @@ import AVFoundation
 class TimerModeViewController: UIViewController {
     var player: AVAudioPlayer!
 
+    @IBOutlet weak var startLabel: UIButton!
+    @IBOutlet weak var stopLabel: UIButton!
+    
     @IBOutlet weak var timePicker: UIPickerView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var startPauseButton: UIButton!
@@ -29,21 +32,22 @@ class TimerModeViewController: UIViewController {
     var applySecond = 0
     var onlySecond = 0
     
+    var minString = "Minute"
+    var secString = "Seconds"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         timePicker.delegate = self
+        localLang()
+        //setLanguage()
     }
     
     @IBAction func startButton(_ sender: UIButton) {
         
         timer.invalidate()
-        
-        totalTime = (timePicker.selectedRow(inComponent: 0) * 60) +                     timePicker.selectedRow(inComponent: 1)
-        
+        totalTime = (timePicker.selectedRow(inComponent: 0) * 60) + timePicker.selectedRow(inComponent: 1)
         timeLabel.frame.size = timeLabel.intrinsicContentSize
-        
         secondsPassed = 0
-        
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateMinuteSecond), userInfo: nil, repeats: true)
     }
 
@@ -58,7 +62,8 @@ class TimerModeViewController: UIViewController {
             secondsPassed += 1
         } else {
             finishSound()
-            timeLabel.text = "FINISHED!"
+            timeLabel.text = "FINISHED!".localized
+            //setLanguage()
             timerEnd()
         }
     }
@@ -138,10 +143,10 @@ extension TimerModeViewController: UIPickerViewDelegate, UIPickerViewDataSource 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch component {
         case 0:
-            return "\(row) Minute"
+            return "\(row) "+minString.localized
 
         case 1:
-            return "\(row) Second"
+            return "\(row) "+secString.localized
 
         default:
             return ""
@@ -178,5 +183,34 @@ extension TimerModeViewController: UIPickerViewDelegate, UIPickerViewDataSource 
             self.onlySecond = 0
             self.player.stop()
         }
+    }
+    
+    func localLang() {
+        startLabel.setTitle("Start".localized, for: .normal)
+        stopLabel.setTitle("Stop".localized, for: .normal)
+        self.navigationItem.title = "Timer Mode".localized
+        self.navigationItem.backButtonTitle = "Back".localized
+    }
+    
+    func setLanguage() {
+        
+        // 설정된 언어 코드 가져오기
+        let language = UserDefaults.standard.array(forKey: "AppleLanguages")?.first as! String
+        let index = language.index(language.startIndex, offsetBy: 2)
+        let languageCode = String(language[..<index]) //"ko" , "en" 등
+        
+        //설정된 언어 파일 가져오기
+        let path = Bundle.main.path(forResource: languageCode, ofType: "lproj")
+        let bundle = Bundle(path: path!)
+        
+        if timeLabel.text == "FINISHED" { bundle?.localizedString(forKey: "FINISHED!", value: nil, table: nil) }
+        //timeLabel.text = bundle?.localizedString(forKey: "00:00", value: nil, table: nil)
+        startLabel.setTitle(bundle?.localizedString(forKey: "Start", value: nil, table: nil), for: .normal)
+        stopLabel.setTitle(bundle?.localizedString(forKey: "Stop", value: nil, table: nil), for: .normal)
+        minString = (bundle?.localizedString(forKey: "Minute", value: nil, table: nil))!
+        secString = (bundle?.localizedString(forKey: "Seconds", value: nil, table: nil))!
+        navigationItem.title = bundle?.localizedString(forKey: "Timer Mode", value: nil, table: nil)
+        navigationItem.backButtonTitle = bundle?.localizedString(forKey: "Back", value: nil, table: nil)
+        
     }
 }

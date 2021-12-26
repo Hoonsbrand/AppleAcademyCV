@@ -12,6 +12,9 @@ class CountingModeViewController: UIViewController {
     var player: AVAudioPlayer!
     let setCountsColor = UIColor.white
     
+
+    @IBOutlet weak var startLabel: UIButton!
+    @IBOutlet weak var stopLabel: UIButton!
     @IBOutlet weak var countsNumber: UILabel!
     var timer = Timer()
     var totalCounts = 0
@@ -22,13 +25,17 @@ class CountingModeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.countsNumber.numberOfLines = 0
+        self.navigationItem.title = "Counting Mode".localized
+        self.countsNumber.text = "Set Counts".localized
+        localLang()
+        //setLanguage()
     }
     
     @IBAction func countsButton(_ sender: UIButton) {
         timer.invalidate()
         totalCounts = Int(sender.titleLabel!.text!)!
  
-        let alert = UIAlertController(title: "Choose seconds Interval", message: "Fear is just an illusion", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Choose seconds Interval".localized, message: "Fear is just an illusion".localized, preferredStyle: .actionSheet)
         
         let oneSec = UIAlertAction(title: "2", style: .default) { (action) in
             self.secondsInterval = Float(alert.actions[0].title!)
@@ -40,7 +47,7 @@ class CountingModeViewController: UIViewController {
         let threeSec = UIAlertAction(title: "4", style: .default) { (action) in
             self.secondsInterval = Float(alert.actions[2].title!)
         }
-        let cancel = UIAlertAction(title: "cancel", style: .cancel) {
+        let cancel = UIAlertAction(title: "cancel".localized, style: .cancel) {
             (cancel) in
         }
         alert.addAction(oneSec)
@@ -63,7 +70,7 @@ class CountingModeViewController: UIViewController {
         timer.invalidate()
         secondsInterval = 1.0
         countsPassed = 0
-        countsNumber.text = "Set Counts"
+        countsNumber.text = "Set Counts".localized
         countsNumber.backgroundColor = setCountsColor
         player.stop()
     }
@@ -75,7 +82,7 @@ class CountingModeViewController: UIViewController {
             countSound()
         } else {
             endSound()
-            countsNumber.text = "Drink Some Water!"
+            countsNumber.text = "Drink Some Water!".localized
             countsNumber.backgroundColor = UIColor.systemRed
             countsEnd()
         }
@@ -104,10 +111,33 @@ class CountingModeViewController: UIViewController {
             self.timer.invalidate()
             self.secondsInterval = 1.0
             self.countsPassed = 0
-            self.countsNumber.text = "Set Counts"
+            self.countsNumber.text = "Set Counts".localized
             self.countsNumber.backgroundColor = self.setCountsColor
             self.player.stop()
         }
+    }
+    
+    func localLang() {
+        startLabel.setTitle("Start".localized, for: .normal)
+        stopLabel.setTitle("Stop".localized, for: .normal)
+        
+    }
+    
+    func setLanguage() {
+        
+        // 설정된 언어 코드 가져오기
+        let language = UserDefaults.standard.array(forKey: "AppleLanguages")?.first as! String
+        let index = language.index(language.startIndex, offsetBy: 2)
+        let languageCode = String(language[..<index]) //"ko" , "en" 등
+        
+        //설정된 언어 파일 가져오기
+        let path = Bundle.main.path(forResource: languageCode, ofType: "lproj")
+        let bundle = Bundle(path: path!)
+        
+        startLabel.setTitle(bundle?.localizedString(forKey: "Start", value: nil, table: nil), for: .normal)
+        stopLabel.setTitle(bundle?.localizedString(forKey: "Stop", value: nil, table: nil), for: .normal)
+        countsNumber.text = bundle?.localizedString(forKey: "Drink Some Water!", value: nil, table: nil)
+        countsNumber.text = bundle?.localizedString(forKey: "Set Counts", value: nil, table: nil)
     }
     
 }
