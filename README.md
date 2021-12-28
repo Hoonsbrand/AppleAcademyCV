@@ -1,7 +1,7 @@
-﻿# A Short Introduce of my portfolio for Apple Academy.
+# A Short Introduce of my portfolio for Apple Academy.
 ### Wecome to my GitHub! 
 ### I know you do not have a much time so I will be quick. 
-### If you do not have a enough time, at least please look the Udemy iOS, Note-Taking, Personal Projects folder. They are what I have studied about iOS and Swift so far from November 2021 with still studying for college. I am not really an expert of programming and just get started iOS programming. But through my Notes, Project, I want you to see my potential and passion. 
+### If you do not have a enough time, at least please look the Udemy iOS, Note-Taking, Personal Projects folder. They are what I have studied about iOS and Swift so far from November 2021 with still studying for college. I am not an expert of programming and just get started iOS programming. But through my Notes, Project that I have done since this November.</br> I want you to see my potential and passion. 
 
 
 # If you have more time to read this..
