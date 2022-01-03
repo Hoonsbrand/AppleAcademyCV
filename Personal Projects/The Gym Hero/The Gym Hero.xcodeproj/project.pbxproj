@@ -15,14 +15,14 @@
 		04125C88276875B200446D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04125C86276875B200446D90 /* LaunchScreen.storyboard */; };
 		04125C9D276891B800446D90 /* CountingModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04125C9C276891B800446D90 /* CountingModeViewController.swift */; };
 		04125C9F2768920500446D90 /* TimerModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04125C9E2768920500446D90 /* TimerModeViewController.swift */; };
-		04125CA52768CC2400446D90 /* CountingPopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04125CA42768CC2400446D90 /* CountingPopUpController.swift */; };
 		042F6A7A276CA492002716DC /* Finish_alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 042F6A79276CA492002716DC /* Finish_alarm.wav */; };
 		049147162769BFC1009EA477 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 049147152769BFC1009EA477 /* C.wav */; };
 		049147182769BFD5009EA477 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 049147172769BFD5009EA477 /* alarm_sound.mp3 */; };
-		0491471C2769E551009EA477 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491471B2769E550009EA477 /* SettingViewController.swift */; };
-		0491471E2769E566009EA477 /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491471D2769E566009EA477 /* AddProfileViewController.swift */; };
-		049147202769E5D7009EA477 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491471F2769E5D7009EA477 /* EditProfileViewController.swift */; };
 		04C482D52774672300FC826A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04C482D72774672300FC826A /* Localizable.strings */; };
+		04DFB9372782E5940030B72B /* CountingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFB9362782E5940030B72B /* CountingMode.swift */; };
+		04DFB9392782E6DF0030B72B /* CountingModeBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFB9382782E6DF0030B72B /* CountingModeBrain.swift */; };
+		04DFB93B2782EB040030B72B /* TimerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFB93A2782EB040030B72B /* TimerMode.swift */; };
+		04DFB93D2782EB120030B72B /* TimerModeBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFB93C2782EB120030B72B /* TimerModeBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,17 +35,17 @@
 		04125C87276875B200446D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04125C9C276891B800446D90 /* CountingModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingModeViewController.swift; sourceTree = "<group>"; };
 		04125C9E2768920500446D90 /* TimerModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModeViewController.swift; sourceTree = "<group>"; };
-		04125CA42768CC2400446D90 /* CountingPopUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingPopUpController.swift; sourceTree = "<group>"; };
 		042F6A74276C95C9002716DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		042F6A79276CA492002716DC /* Finish_alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Finish_alarm.wav; sourceTree = "<group>"; };
 		04620C7B276B2E77007165D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049147152769BFC1009EA477 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
 		049147172769BFD5009EA477 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
-		0491471B2769E550009EA477 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		0491471D2769E566009EA477 /* AddProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
-		0491471F2769E5D7009EA477 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		04C482D62774672300FC826A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04C482D82774676500FC826A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04DFB9362782E5940030B72B /* CountingMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingMode.swift; sourceTree = "<group>"; };
+		04DFB9382782E6DF0030B72B /* CountingModeBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingModeBrain.swift; sourceTree = "<group>"; };
+		04DFB93A2782EB040030B72B /* TimerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMode.swift; sourceTree = "<group>"; };
+		04DFB93C2782EB120030B72B /* TimerModeBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModeBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,18 +84,10 @@
 				04125C972768912600446D90 /* View */,
 				04125C7B276875B000446D90 /* AppDelegate.swift */,
 				04125C7D276875B000446D90 /* SceneDelegate.swift */,
-				04125C81276875B000446D90 /* Main.storyboard */,
 				04125C84276875B200446D90 /* Assets.xcassets */,
 				04125C86276875B200446D90 /* LaunchScreen.storyboard */,
-				04125C7F276875B000446D90 /* ViewController.swift */,
-				04125C9C276891B800446D90 /* CountingModeViewController.swift */,
-				04125C9E2768920500446D90 /* TimerModeViewController.swift */,
-				04125CA42768CC2400446D90 /* CountingPopUpController.swift */,
 				049147152769BFC1009EA477 /* C.wav */,
 				049147172769BFD5009EA477 /* alarm_sound.mp3 */,
-				0491471B2769E550009EA477 /* SettingViewController.swift */,
-				0491471D2769E566009EA477 /* AddProfileViewController.swift */,
-				0491471F2769E5D7009EA477 /* EditProfileViewController.swift */,
 				04620C7B276B2E77007165D0 /* Info.plist */,
 				042F6A79276CA492002716DC /* Finish_alarm.wav */,
 				04C482D72774672300FC826A /* Localizable.strings */,
@@ -106,6 +98,7 @@
 		04125C972768912600446D90 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04125C81276875B000446D90 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +106,9 @@
 		04125C982768913100446D90 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04125C9C276891B800446D90 /* CountingModeViewController.swift */,
+				04125C9E2768920500446D90 /* TimerModeViewController.swift */,
+				04125C7F276875B000446D90 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -120,6 +116,10 @@
 		04125C992768913900446D90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04DFB9362782E5940030B72B /* CountingMode.swift */,
+				04DFB9382782E6DF0030B72B /* CountingModeBrain.swift */,
+				04DFB93A2782EB040030B72B /* TimerMode.swift */,
+				04DFB93C2782EB120030B72B /* TimerModeBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,14 +201,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				04125C80276875B000446D90 /* ViewController.swift in Sources */,
+				04DFB9372782E5940030B72B /* CountingMode.swift in Sources */,
+				04DFB93B2782EB040030B72B /* TimerMode.swift in Sources */,
+				04DFB93D2782EB120030B72B /* TimerModeBrain.swift in Sources */,
+				04DFB9392782E6DF0030B72B /* CountingModeBrain.swift in Sources */,
 				04125C9F2768920500446D90 /* TimerModeViewController.swift in Sources */,
-				0491471C2769E551009EA477 /* SettingViewController.swift in Sources */,
-				0491471E2769E566009EA477 /* AddProfileViewController.swift in Sources */,
 				04125C7C276875B000446D90 /* AppDelegate.swift in Sources */,
-				04125CA52768CC2400446D90 /* CountingPopUpController.swift in Sources */,
 				04125C9D276891B800446D90 /* CountingModeViewController.swift in Sources */,
 				04125C7E276875B000446D90 /* SceneDelegate.swift in Sources */,
-				049147202769E5D7009EA477 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

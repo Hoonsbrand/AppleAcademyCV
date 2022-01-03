@@ -9,9 +9,10 @@ import UIKit
 import AVFoundation
 
 class CountingModeViewController: UIViewController {
-    var player: AVAudioPlayer!
+    //var player: AVAudioPlayer!
     let setCountsColor = UIColor.white
     
+    var countingBrain = CountingModeBrain()
 
     @IBOutlet weak var startLabel: UIButton!
     @IBOutlet weak var stopLabel: UIButton!
@@ -28,7 +29,6 @@ class CountingModeViewController: UIViewController {
         self.navigationItem.title = "Counting Mode".localized
         self.countsNumber.text = "Set Counts".localized
         localLang()
-        //setLanguage()
     }
     
     @IBAction func countsButton(_ sender: UIButton) {
@@ -72,16 +72,16 @@ class CountingModeViewController: UIViewController {
         countsPassed = 0
         countsNumber.text = "Set Counts".localized
         countsNumber.backgroundColor = setCountsColor
-        player.stop()
+        countingBrain.player.stop()
     }
     
-    @objc func updateCounts(){
+    @objc func updateCounts() {
         if countsPassed < totalCounts {
             countsNumber.text = String(totalCounts - countsPassed)
             countsPassed += 1
-            countSound()
+            countingBrain.countSound()
         } else {
-            endSound()
+            countingBrain.endSound()
             countsNumber.text = "Drink Some Water!".localized
             countsNumber.backgroundColor = UIColor.systemRed
             countsEnd()
@@ -94,51 +94,38 @@ class CountingModeViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(secondsInterval!), target: self, selector: #selector(updateCounts), userInfo: nil, repeats: true)
     }
     
-    func countSound(){
-        let url = Bundle.main.url(forResource: "C", withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player.play()
-    }
-    
-    func endSound(){
-        let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player.play()
-    }
-    
     func countsEnd() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.timer.invalidate()
             self.secondsInterval = 1.0
             self.countsPassed = 0
             self.countsNumber.text = "Set Counts".localized
-            self.countsNumber.backgroundColor = self.setCountsColor
-            self.player.stop()
+            self.countsNumber.backgroundColor = UIColor.white
+            self.countingBrain.player.stop()
         }
     }
     
     func localLang() {
         startLabel.setTitle("Start".localized, for: .normal)
         stopLabel.setTitle("Stop".localized, for: .normal)
-        
     }
     
-    func setLanguage() {
-        
-        // 설정된 언어 코드 가져오기
-        let language = UserDefaults.standard.array(forKey: "AppleLanguages")?.first as! String
-        let index = language.index(language.startIndex, offsetBy: 2)
-        let languageCode = String(language[..<index]) //"ko" , "en" 등
-        
-        //설정된 언어 파일 가져오기
-        let path = Bundle.main.path(forResource: languageCode, ofType: "lproj")
-        let bundle = Bundle(path: path!)
-        
-        startLabel.setTitle(bundle?.localizedString(forKey: "Start", value: nil, table: nil), for: .normal)
-        stopLabel.setTitle(bundle?.localizedString(forKey: "Stop", value: nil, table: nil), for: .normal)
-        countsNumber.text = bundle?.localizedString(forKey: "Drink Some Water!", value: nil, table: nil)
-        countsNumber.text = bundle?.localizedString(forKey: "Set Counts", value: nil, table: nil)
-    }
+//    func setLanguage() {
+//
+//        // 설정된 언어 코드 가져오기
+//        let language = UserDefaults.standard.array(forKey: "AppleLanguages")?.first as! String
+//        let index = language.index(language.startIndex, offsetBy: 2)
+//        let languageCode = String(language[..<index]) //"ko" , "en" 등
+//
+//        //설정된 언어 파일 가져오기
+//        let path = Bundle.main.path(forResource: languageCode, ofType: "lproj")
+//        let bundle = Bundle(path: path!)
+//
+//        startLabel.setTitle(bundle?.localizedString(forKey: "Start", value: nil, table: nil), for: .normal)
+//        stopLabel.setTitle(bundle?.localizedString(forKey: "Stop", value: nil, table: nil), for: .normal)
+//        countsNumber.text = bundle?.localizedString(forKey: "Drink Some Water!", value: nil, table: nil)
+//        countsNumber.text = bundle?.localizedString(forKey: "Set Counts", value: nil, table: nil)
+//    }
     
 }
 
