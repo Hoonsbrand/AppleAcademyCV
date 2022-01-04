@@ -40,7 +40,6 @@ class CountingModeViewController: UIViewController {
         let oneSec = UIAlertAction(title: "2", style: .default) { (action) in
             self.secondsInterval = Float(alert.actions[0].title!)
         }
-        
         let twoSec = UIAlertAction(title: "3", style: .default) { (action) in
             self.secondsInterval = Float(alert.actions[1].title!)
         }

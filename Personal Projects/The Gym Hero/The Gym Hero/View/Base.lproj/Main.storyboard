@@ -210,7 +210,7 @@
                                     <action selector="stopButton:" destination="hzX-lP-00p" eventType="touchUpInside" id="hjh-fi-7eb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fear is just an illusion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nle-0g-hnZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Counts " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nle-0g-hnZ">
                                 <rect key="frame" x="0.0" y="585" width="414" height="277"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="277" id="jfk-1B-9bE"/>

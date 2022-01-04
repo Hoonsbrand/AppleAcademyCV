@@ -105,9 +105,9 @@ Korean and English are now available.
     
        1. change the if - else from TimerModeViewController to more efficiently.
 
-       2. solve Exception caught in AudioQueueInternalNotifyRunning - error -66671. 
+       2. solve Exception caught in AudioQueueInternalNotifyRunning - error -66671. (Done)
        
-       3. apply MVC pattern
+       3. apply MVC pattern 
        
        4. fix auto-layout to make it fit for any Iphone's resolution. (Done)
        
