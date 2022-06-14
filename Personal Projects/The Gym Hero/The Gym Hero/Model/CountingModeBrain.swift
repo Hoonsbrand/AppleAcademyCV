@@ -11,6 +11,10 @@ import AVFoundation
 
 struct CountingModeBrain {
     
+    var countsPassed = 0
+    var totalCounts = 0
+    var countingModeViewController = CountingModeViewController()
+    
     var player: AVAudioPlayer!
 
     mutating func countSound(){
@@ -24,5 +28,4 @@ struct CountingModeBrain {
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
     }
-    
 }
