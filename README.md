@@ -1,4 +1,4 @@
-﻿## **Portfolio what i've studied until 2021 for Apple Developer Academy**
+## **Portfolio what i've studied until 2021 for Apple Developer Academy**
 
   
   
@@ -8,7 +8,7 @@
  - Personal Projects: My own iOS project.
  - Udemy iOS: Things i studied while taking Udemy iOS Class.
 
-## **애플 개발자 아카데미 지원을 위한 2021년까지 공부한것을 토대로 만든 포트폴리오입니다.**
+## **애플 개발자 아카데미 지원을 위한 2021년까지 공부한것에 대한 포트폴리오입니다.**
 
   
 
