@@ -1,19 +1,7 @@
-## **Portfolio what i've studied until 2021 for Apple Developer Academy**
+## **이창훈의 개발경험 저장소**
+---
 
-  
-  
-
- - Note-Taking: My note for Studying iOS & Swift.
- - Past Experience: The Things i've experienced before started to study iOS
- - Personal Projects: My own iOS project.
- - Udemy iOS: Things i studied while taking Udemy iOS Class.
-
-## **애플 개발자 아카데미 지원을 위한 2021년까지 공부한것에 대한 포트폴리오입니다.**
-
-  
-
- - Note-Taking: iOS와 Swift를 공부하며 정리한 노트입니다. 
- - Past Experience: iOS공부를 시작하기 전 경험했던 공부들입니다. 
- - Personal Projects: 학습을 통해 제가 만든 저만의 iOS프로젝트입니다. 
- - Udemy iOS: Udemy iOS강의를 들으며 공부한 것들입니다.
-
+ - ✏️ Note-Taking: Udemy Angela의 강의와 야곰 문법강의를 통해 공부한 iOS와 Swift를 필기한 내용
+ - ⏳ Past Experience: iOS 앱 개발 공부를 시작하기전 경험해보았던 개발 공부들
+ - 🧑🏻‍💻 Personal Projects: Udemy iOS 강의를 수강한 내용을 토대로 만든 첫 개인 프로젝트
+ - 📱 Udemy iOS: Udemy Angela의 강의에서 다루었던 프로젝트들
